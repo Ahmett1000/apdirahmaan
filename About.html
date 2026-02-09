@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EasyStay Hotel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full bg-blue-600 text-white shadow z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">EasyStay Hotel</h1>
+      <ul class="flex gap-6">
+        <li><a href="home.html" class="hover:underline">Home</a></li>
+        <li><a href="booking.html" class="hover:underline">Booking</a></li>
+        <li><a href="about.html" class="hover:underline">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <!-- padding-top si uusan navbar u qarin -->
+  <section class="pt-28 pb-16">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-4">
+        About Our Hotel
+      </h2>
+
+      <p class="text-center max-w-3xl mx-auto mb-10 text-gray-600">
+        EasyStay Hotel offers luxury VIP rooms and affordable normal rooms with the best services for our guests.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- VIP ROOM -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:scale-105 transition text-center">
+          <h3 class="text-2xl font-bold mb-3 text-yellow-500">VIP Room</h3>
+          <p class="mb-4 text-gray-600">
+            Our VIP rooms provide luxury comfort with king-size beds, air conditioning, smart TV, and free WiFi.
+          </p>
+          <p class="font-bold text-lg">Price: $250 per night</p>
+        </div>
+
+        <!-- NORMAL ROOM -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:scale-105 transition text-center">
+          <h3 class="text-2xl font-bold mb-3 text-blue-600">Normal Room</h3>
+          <p class="mb-4 text-gray-600">
+            Our normal rooms are clean and affordable with comfortable beds, fan, and free WiFi.
+          </p>
+          <p class="font-bold text-lg">Price: $50 per night</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

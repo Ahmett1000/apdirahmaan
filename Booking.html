@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Booking</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+<!-- Navbar -->
+<nav class="flex justify-between items-center px-10 py-5 absolute w-full z-10">
+  <h1 class="text-2xl font-bold">EasyStay</h1>
+  <ul class="flex space-x-6 uppercase text-sm">
+    <li><a href="home.html" class="hover:text-yellow-400">Home</a></li>
+    <li><a href="booking.html" class="text-yellow-400">Booking</a></li>
+    <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
+  </ul>
+</nav>
+
+<!-- Background -->
+<section class="min-h-screen bg-cover bg-center flex items-center justify-center"
+style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945');">
+
+<div class="absolute inset-0 bg-black/70"></div>
+
+<!-- Form Card -->
+<div class="relative z-10 bg-white text-black p-8 rounded-2xl shadow-2xl w-full max-w-md">
+
+<h2 class="text-3xl font-bold text-center mb-6">Book Your Room</h2>
+
+<form id="bookingForm" class="space-y-4">
+
+<input type="text" id="name" placeholder="Your Name"
+class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-yellow-400">
+
+<input type="text" id="phone" placeholder="61xxxxxxx / 62xxxxxxx / 68xxxxxxx"
+class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-yellow-400">
+
+<select id="roomType" class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-yellow-400">
+<option value="">Choose Room</option>
+<option value="vip">VIP Room</option>
+<option value="normal">Normal Room</option>
+</select>
+
+<input type="number" id="days" min="1" max="30" placeholder="Duration (1-30 days)"
+class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-yellow-400">
+
+<button class="bg-yellow-400 text-black w-full py-2 rounded-full font-bold hover:bg-yellow-500 transition">
+Confirm Booking
+</button>
+
+</form>
+
+<div id="result" class="mt-4 text-center font-bold"></div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-gray-300 text-center py-4">
+© 2026 EasyStay Hotel. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
